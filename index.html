@@ -560,6 +560,12 @@
       hx-swap="innerHTML"
       hx-indicator="#project-list"
       onclick="setActive(this)">Data</button>
+    <button class="filter-btn"
+      hx-get="/projects?filter=Operating-Systems"
+      hx-target="#project-list"
+      hx-swap="innerHTML"
+      hx-indicator="#project-list"
+      onclick="setActive(this)">Operating-Systems</button>
   </div>
 
   <div id="project-list">
@@ -587,18 +593,17 @@
       </div>
 
       <div class="project-card">
-        <p class="project-tag">Data · API</p>
-        <h3 class="project-title">Project Two</h3>
+        <p class="project-tag">Operating-Systems</p>
+        <h3 class="project-title">Producers and Consumers</h3>
         <p class="project-desc">
-          Describe the purpose of this project, the scale of data involved, and what made it technically interesting or challenging to build.
+          A logical solution written in C to the famous producer consumer problem in operating systems. 
+          The solution uses mutexs and semaphors to lock and unlock parts of memory. 
         </p>
         <div class="project-tech">
-          <span class="tech-pill">Python</span>
-          <span class="tech-pill">Redis</span>
-          <span class="tech-pill">FastAPI</span>
+          <span class="tech-pill">C</span>
         </div>
         <div class="project-links">
-          <a href="#" class="project-link">↗ GitHub</a>
+          <a href="https://github.com/ScoutTheMutt/Producer-Consumer" class="project-link">↗ GitHub</a>
         </div>
       </div>
 
